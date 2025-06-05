@@ -1,0 +1,14 @@
+:root {
+    --maincolor: #FFF;
+    --secondcolor: #FFF;
+}
+
+html, body {
+    font-family: 'Raleway-Regular', 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
