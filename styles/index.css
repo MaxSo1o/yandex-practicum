@@ -1,0 +1,32 @@
+/* Импорт осноных стилей */
+@import url('./main.css');
+
+/* Шапка */
+header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Меню */
+ .nav__header>nav>ul { 
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: circle;
+    text-wrap: nowrap;
+    gap: 32px;
+}
+
+li.menu__tag {
+    text-decoration: underline;
+}
+
+li.menu__active {
+    text-decoration: none;
+    list-style: none;
+}
