@@ -7,19 +7,20 @@
     <body>
         <header>
             <div class="nav__header">
+                <!-- Навигация -->
                 <nav>
                     <ul>
-                        <li class="menu__active menu__tag">
+                        <li class="menu__firstpoint menu__tag menu__active">
                             <a href="#">
                                 главная
                             </a>
                         </li>
-                        <li class="menu__tag">
+                        <li>
                             <a href="#">
                                 посмотреть лоты
                             </a>
                         </li>
-                        <li class="menu__tag">
+                        <li>
                             <a href="#">
                                 об аукционе
                             </a>
@@ -43,13 +44,112 @@
                 </a>
             </div>
             <div class="contacts__header">
-                <span>+7 920 582 1271</span>
-                <span>maxso1o@yandex.ru</span>
-                <address>наб. Принсенграхт 263-265, Амстердам</address>
+                <span class="contacts__number">+7 920 582 1271</span>
+                <span class="contacts__email">maxso1o@yandex.ru</span>
+                <address class="contacts__adress">наб. Принсенграхт 263-265, Амстердам</address>
             </div>
         </header>
         <main>
-
+            <!-- ОНО ТЕБЕ НАДО? -->
+            <section class="cover">
+                <div class="cover__tittle">
+                    <span style="text-align: left;">
+                        ОНО
+                    </span>
+                    <span style="text-align: center;">
+                        ТЕБЕ
+                    </span>
+                    <span style="text-align: right;">
+                        НАДО
+                    </span>
+                </div>
+                <div class="cover__description">
+                    <span class="cover__description__text">
+                        Аукцион вещей, вкоторые никто не верил
+                    </span>
+                    <a>
+                        <button class="cover__description__betbutton">
+                            сделать ставку
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <!-- ОНО ТЕБЕ НАДО? -->
+            <!-- Какие-то лоты -->
+            <section class="lots">
+                <span class="lots__tittle">
+                    Лоты
+                </span>
+                <div class="lots__cards">
+                    <a href="#open_card" class="card">
+                        <span class="card__tittle">
+                            Фильм режиссёра, который бросил киношколу
+                        </span>
+                        <span class="card__description">
+                            Не просто бросил, а ушёл с первой лекции. 
+                            Какой была бы ваша ставка, если бы вы не знали, 
+                            что режиссёр — Пол Томас Андерсон?
+                        </span>
+                    </a>
+                    <a href="#open_card" class="card">
+                        <span class="card__tittle">
+                            Книга, где описан один скучный день из жизни рекламного агента
+                        </span>
+                        <span class="card__description">
+                            Объёмом почти в тысячу страниц. 
+                            Иногда без знаков препинания и с переходами на древнеанглийский. 
+                            В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, 
+                            начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. 
+                            Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                        </span>
+                    </a>
+                    <a href="#open_card" class="card">
+                        <span class="card__tittle">
+                            Картина, которую повторит даже 5-летний сын маминой подруги
+                        </span>
+                        <span class="card__description">
+                            Ну действительно, там линия, тут кружочек, 
+                            а здесь и вовсе что-то похожее на инфузорию-туфельку. 
+                            Никаких полей, лесов, котиков... 
+                            Сколько бы вы на такое поставили, если бы не знали, 
+                            что это — одна из революционных работ Кандинского?
+                        </span>
+                    </a>
+                </div>
+                <a href="#f" class="lots__morelink">
+                    посмотреть больше
+                </a>
+            </section>
+            <!-- Какие-то лоты -->
+            <!-- Об аукционе -->
+            <section class="about">
+                <div class="about__logo">
+                </div>
+                <div class="about__info">
+                    <span class="about__info__tittle">
+                        Об аукционе
+                    </span>
+                    <span class="about__info__text">
+                    <p>
+                        Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
+                        Наши лоты вообще не должны были попасть ни на один аукцион. 
+                        Потому что кому нужен дневник девочки-подростка или картина, 
+                        которую может нарисовать даже ребёнок? 
+                        Кому нужны все эти странные вещи, созданные любителями?
+                    </p>
+                    <p>
+                        Слишком сложные или, наоборот, слишком простые. 
+                        Опережающие своё время. В пух и прах растерзанные критиками. 
+                        Непринятые и непонятые. Когда-то они казались просто неудачными. 
+                        Но, несмотря на критику, кажущуюся простоту или сложность, 
+                        сейчас без этих лотов невозможно представить современную культуру. 
+                        Когда в эти вещи не верил никто, продолжали верить их создатели. 
+                        И сейчас эти лоты стали культовыми. 
+                    </p>
+                    </span>
+                </div>
+            </section>
+            <!-- Об аукционе -->
         </main>
         <footer>
             

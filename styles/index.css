@@ -6,28 +6,208 @@ header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-}
-
-address {
-    font-style: normal;
+    color: var(--secondcolor);
+    height: 293px;
+    width: 100%;
 }
 
 /* Меню */
  .nav__header>nav>ul { 
     display: flex;
     flex-direction: row;
-    text-decoration: none;
     list-style: circle;
     text-wrap: nowrap;
     gap: 32px;
+    font-size: 18px;
 }
 
-li.menu__tag {
-    text-decoration: underline;
-}
-
-li.menu__active {
+li.menu__active>a {
     text-decoration: none;
+}
+
+li.menu__firstpoint {
     list-style: none;
 }
 
+/* Блок контактов */
+.contacts__header {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 180px;
+}
+
+.contacts__number {
+    text-decoration: underline solid;
+}
+
+.contacts__email {
+    text-decoration: underline solid;
+}
+
+address.contacts__adress {
+    font-style: normal;
+}
+
+/* Контейнер Cover */
+section.cover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 757px;
+    padding: 50px;
+    background-color: #0000009d;
+    background-image: url('../images/background-cover.png');
+    background-blend-mode: color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ОНО ТЕБЕ НАДО? */
+.cover__tittle {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: 100px;
+    letter-spacing: 30px;
+    width: 100%;
+    margin: auto 0;
+}
+
+/* Декскрипшн :) */
+.cover__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cover__description__text {
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 24px;
+}
+
+.cover__description__betbutton {
+    color: var(--maincolor);
+    background: none;
+    border: 1px solid var(--maincolor);
+    text-transform: uppercase;
+    font-size: 22px;
+    width: 256px;
+    height: 51px;
+}
+
+.cover__description__betbutton:hover {
+    background: #ffffff27;
+}
+
+/* А можно уже просто на SASS сделать? */
+
+/* Лоты */
+section.lots {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    margin: 180px 0;
+}
+
+.lots__tittle {
+    font-family: 'Raleway-Bold', sans-serif;
+    color: var(--secondcolor);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+/* Карточки */
+.lots__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 30px 0;
+    counter-reset: background-img 0;
+}
+
+/* Оформление ссылки */
+.lots__morelink {
+    margin-left: 24px;
+}
+
+/* Оформление карточек */
+.lots__cards>.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    background-image: url('../images/cards/card-1.png');
+    background-color: #00000099;
+    background-blend-mode: color;
+    width: 334px;
+    height: 596px;
+    padding: 48px 40px;
+}
+
+.card__tittle {
+    font-family: 'Raleway-Bold', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline solid;
+    font-size: 22px;
+    color: var(--maincolor);
+}
+
+.card__description {
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--maincolor);
+}
+
+/* Об аукционе */
+section.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    width: 100%;
+    height: 595px;
+    padding: 0 24px;
+    color: var(--secondcolor);
+}
+
+/* Logo */
+.about__logo {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    content: '';
+    margin-top: 35px;
+    justify-items: center;
+    background: url('../images/logo-white.svg') #000;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 133px;
+}
+
+.about__info__tittle {
+    font-family: 'Raleway-Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.about__info__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about__info__text>p {
+    margin-bottom: 24px;
+}

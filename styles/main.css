@@ -7,16 +7,32 @@
 
 body {
     font-family: 'Raleway-Regular', 'Arial', sans-serif;
+    font-size: 18px;
+    color: var(--maincolor);
     background-color: var(--maincolor);
     max-width: 1100px;
     margin: 0 auto;
-    letter-spacing: 0%;
+}
+
+a, button {
+    pointer-events: fill;
 }
 
 a {
-    text-decoration: none;
     text-transform: none;
     color: var(--secondcolor);
+}
+
+a:hover {
+    color: #686868;
+}
+
+a, button, span {
+    display: block;
+}
+
+span, div {
+    pointer-events: none;
 }
 
 * {
