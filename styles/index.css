@@ -12,7 +12,7 @@ header {
 }
 
 /* Меню */
- .nav__header>nav>ul { 
+.nav__header>nav>ul { 
     display: flex;
     flex-direction: row;
     list-style: circle;
@@ -45,7 +45,7 @@ li.menu__firstpoint {
     text-decoration: underline solid;
 }
 
-address.contacts__adress {
+.contacts__adress {
     font-style: normal;
 }
 
@@ -210,4 +210,36 @@ section.about {
 
 .about__info__text>p {
     margin-bottom: 24px;
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    margin-top: 180px;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--secondcolor)
+}
+
+.contacts__footer {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.nav__footer>nav>ul { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-wrap: nowrap;
+    font-size: 18px;
+}
+
+.socials__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 48px;
 }
