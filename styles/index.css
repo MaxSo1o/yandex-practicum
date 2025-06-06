@@ -12,13 +12,18 @@ header {
 }
 
 /* Меню */
-.nav__header>nav>ul { 
+.nav__header>nav>ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style: circle;
     text-wrap: nowrap;
     gap: 32px;
     font-size: 18px;
+}
+
+a.menu__tag {
+    text-decoration: underline;
 }
 
 li.menu__active>a {
@@ -92,6 +97,7 @@ section.cover {
 
 .cover__description__betbutton {
     color: var(--maincolor);
+    text-decoration: none;
     background: none;
     border: 1px solid var(--maincolor);
     text-transform: uppercase;
@@ -137,17 +143,29 @@ section.lots {
 }
 
 /* Оформление карточек */
-.lots__cards>.card {
+.lots__cards>article>.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
-    background-image: url('../images/cards/card-1.png');
     background-color: #00000099;
     background-blend-mode: color;
     width: 334px;
     height: 596px;
     padding: 48px 40px;
+}
+
+/* Фоны карточек */
+.card__first {
+    background-image: url('../images/cards/card-1.png');
+}
+
+.card__second {
+    background-image: url('../images/cards/card-2.png');
+}
+
+.card__third {
+    background-image: url('../images/cards/card-3.png');
 }
 
 .card__tittle {
